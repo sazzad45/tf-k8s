@@ -15,7 +15,7 @@ In k8s sub repository:
 1. Install docker and create k8s environment.
 2. cd nodeapplication/
 3. build docker image of that application.
-4. Place docker build -t node-api:v1 .
+4. Place docker build -t node-api:latest .
 5. If push to any image repository if not edit deployment file "imagePullPolicy: Never" 
 6. then go to deplyment file place "kubectl -f deployment.yaml"
 7. service will expose at node port.
