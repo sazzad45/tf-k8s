@@ -1,5 +1,5 @@
 module "vpc" {
-  source                        = "git::git@github.com:terraform-aws-modules/terraform-aws-vpc.git"
+  source                        = "git::git@github.com:sazzad45/tf-k8s.git//terraform-module-aws-vpc"
   name                          = local.resource_prefix
   cidr                          = var.cidr
   azs                           = var.azs
