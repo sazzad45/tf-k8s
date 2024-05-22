@@ -43,7 +43,7 @@ resource "aws_instance" "test_ec2" {
   key_name                    = var.key_pair_name
   security_groups             = ["${aws_security_group.security.id}"]
   associate_public_ip_address = true
-  subnet_id                   = subnet-67891832
+  subnet_id                   = subnet-67891832 //(can be use reomte state)
 
   tags = {
     Name = var.instance_tag[count.index]
